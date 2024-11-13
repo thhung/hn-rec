@@ -16,12 +16,11 @@ nltk.download("stopwords")
 # Base URL for Hacker News API
 base_url = "https://hacker-news.firebaseio.com/v0"
 
-ASSET_FOLDER = "../query_reformulation/assets"
 cross_encoder = ORTModelForSequenceClassification.from_pretrained(
-    f"{ASSET_FOLDER}/ce-ms-marco-MiniLM-L-6-v2"
+    "CelDom/ce-ms-marco-MiniLM-L-6-v2"
 )
 ce_tokenizer = AutoTokenizer.from_pretrained(
-    f"{ASSET_FOLDER}/ce-ms-marco-MiniLM-L-6-v2"
+    "CelDom/ce-ms-marco-MiniLM-L-6-v2"
 )
 # Cache directory
 CACHE_DIR = "cache_stories/"
