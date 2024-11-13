@@ -12,6 +12,7 @@ from transformers import AutoTokenizer
 # Download necessary NLTK data
 nltk.download("punkt")
 nltk.download("stopwords")
+nltk.download('punkt_tab')
 
 # Base URL for Hacker News API
 base_url = "https://hacker-news.firebaseio.com/v0"
